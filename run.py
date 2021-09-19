@@ -19,7 +19,7 @@ for subdomain in subdomains:
 	except requests.ConnectionError:
 		pass
 	else:
-		print("{+} Discoverd subdomain", url)
+		print("[+] Discoverd subdomain", url)
 		discovered_subdomains.append(url)
 with open("discovered_subdomains.txt", "w") as f:
 	for subdomain in discovered_subdomains:
